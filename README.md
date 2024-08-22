@@ -21,6 +21,9 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 
 # Coding and Output:
+
+## NAME :Girithick Rohan
+## Reg.No:21222320063
 ```
 import pandas as pd
 df=pd.read_csv("SAMPLEIDS.csv")
@@ -169,15 +172,12 @@ high
 
 ![image](https://github.com/user-attachments/assets/bea5e76f-c7f9-4bff-85e6-23cf2454d417)
 
-
-
 ```
 df1 = df[((df['height'] >=low)& (df['height'] <=high))]
 df1
 ```
 
 ![image](https://github.com/user-attachments/assets/448fd880-ceb2-42bb-86a8-a5aadc7b4fe0)
-
 
 ```
 z = np.abs(stats.zscore(df['height']))
@@ -186,16 +186,12 @@ z
 
 ![image](https://github.com/user-attachments/assets/42e6ae13-a795-47a9-8d32-2c64f0a68fde)
 
-
 ```
 df1 = df[z<3]
 df1
 ```
 
-
 ![image](https://github.com/user-attachments/assets/d5fb167b-fff9-48fa-b25c-e65fd149678f)
-
-
 
 # Result
 Thus we have cleaned the data and removed the outliers by detection using IQR and Z-score method.
